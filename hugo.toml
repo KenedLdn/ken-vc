@@ -1,0 +1,35 @@
+baseURL = 'https://ken-vc.com/'
+languageCode = 'en-gb'
+title = 'Ken Ho'
+theme = 'kenvc'
+
+[params]
+  description = 'VC analyst, systems thinker, lifelong learner.'
+  linkedin = 'https://www.linkedin.com/in/kenho-ldn'
+
+[menu]
+  [[menu.main]]
+    name = 'Home'
+    url = '/'
+    weight = 1
+  [[menu.main]]
+    name = 'About'
+    url = '/about/'
+    weight = 2
+  [[menu.main]]
+    name = 'Blog'
+    url = '/blog/'
+    weight = 3
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+  [markup.highlight]
+    style = 'friendly'
+
+[taxonomies]
+  tag = 'tags'
+
+[pagination]
+  pagerSize = 10

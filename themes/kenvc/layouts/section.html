@@ -1,0 +1,45 @@
+{{ define "main" }}
+{{ if eq .Section "blog" }}
+<section class="blog-list">
+  <div class="container">
+    <h1 class="blog-list__header">Blog</h1>
+    {{ range .Pages.ByDate.Reverse }}
+    <article class="post-card fade-in">
+      <p class="post-card__date">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
+      </p>
+      <h2 class="post-card__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      {{ with .Params.summary }}<p class="post-card__summary">{{ . }}</p>{{ end }}
+      {{ with .Params.tags }}
+      <div class="post-card__tags">
+        {{ range . }}<span class="post-card__tag">{{ . }}</span>{{ end }}
+      </div>
+      {{ end }}
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ else if eq .Section "about" }}
+<section class="page-content">
+  <div class="container">
+    <h1 class="page-title">{{ .Title }}</h1>
+    <div class="about-content">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+{{ else }}
+<section class="page-content">
+  <div class="container">
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ .Content }}
+    {{ range .Pages }}
+    <article>
+      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+      {{ .Summary }}
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+{{ end }}

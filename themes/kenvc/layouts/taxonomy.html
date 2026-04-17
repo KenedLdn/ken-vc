@@ -1,0 +1,16 @@
+{{ define "main" }}
+<section class="blog-list">
+  <div class="container">
+    <h1 class="blog-list__header">{{ .Title }}</h1>
+    {{ range .Pages }}
+    <article class="post-card fade-in">
+      <p class="post-card__date">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
+      </p>
+      <h2 class="post-card__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      {{ with .Params.summary }}<p class="post-card__summary">{{ . }}</p>{{ end }}
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

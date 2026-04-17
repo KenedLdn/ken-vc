@@ -1,0 +1,22 @@
+{{ define "main" }}
+<section class="hero" id="hero"
+  data-stops='{{ with .Params.stops }}{{ jsonify . }}{{ end }}'>
+
+  <h1 class="hero-name">{{ site.Title }}</h1>
+  <p class="hero-tagline" id="tagline"></p>
+  <p class="hero-blurb" id="blurb"></p>
+  <div class="hero-descriptors" id="descriptors"></div>
+
+  <div class="slider-container">
+    <span class="slider-label slider-label--work">Work</span>
+    <input type="range" min="0" max="100" value="50" class="slider" id="lifeWorkSlider" aria-label="Slide between Work and Life">
+    <span class="slider-label slider-label--life">Life</span>
+  </div>
+  <p class="slider-hint" id="sliderHint">← drag to explore →</p>
+</section>
+{{ end }}
+
+{{ define "scripts" }}
+{{ $sliderJs := resources.Get "js/slider.js" | minify | fingerprint }}
+<script src="{{ $sliderJs.RelPermalink }}"></script>
+{{ end }}

@@ -1,0 +1,47 @@
+{{ define "main" }}
+{{ if eq .Section "blog" }}
+<article class="post-single">
+  <div class="container">
+    <header class="post-single__header">
+      <h1 class="post-single__title">{{ .Title }}</h1>
+      <div class="post-single__meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
+        <span>{{ .ReadingTime }} min read</span>
+        {{ with .Params.series }}<span>Series: {{ . }}</span>{{ end }}
+      </div>
+    </header>
+    <div class="post-single__content">
+      {{ .Content }}
+    </div>
+    {{ with .Params.tags }}
+    <div class="post-card__tags" style="margin-top: 32px;">
+      {{ range . }}<span class="post-card__tag">{{ . }}</span>{{ end }}
+    </div>
+    {{ end }}
+    <nav class="post-nav">
+      {{ with .PrevInSection }}
+      <a href="{{ .RelPermalink }}">
+        <span class="post-nav__label">Previous</span>
+        {{ .Title }}
+      </a>
+      {{ else }}<span></span>{{ end }}
+      {{ with .NextInSection }}
+      <a href="{{ .RelPermalink }}">
+        <span class="post-nav__label">Next</span>
+        {{ .Title }}
+      </a>
+      {{ else }}<span></span>{{ end }}
+    </nav>
+  </div>
+</article>
+{{ else }}
+<section class="page-content">
+  <div class="container">
+    <h1 class="page-title">{{ .Title }}</h1>
+    <div class="about-content">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

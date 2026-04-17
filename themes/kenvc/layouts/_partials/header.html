@@ -1,0 +1,13 @@
+<div class="container">
+  <a href="{{ "/" | relURL }}" class="site-nav__logo">{{ site.Title }}</a>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <ul class="site-nav__links">
+    {{ range site.Menus.main }}
+      <li><a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} class="active"{{ end }}>{{ .Name }}</a></li>
+    {{ end }}
+  </ul>
+</div>

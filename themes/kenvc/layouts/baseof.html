@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Locale | default "en" }}" dir="ltr">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    {{ partial "header.html" . }}
+  </nav>
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer class="site-footer">
+    {{ partial "footer.html" . }}
+  </footer>
+  {{ $mainJs := resources.Get "js/main.js" | minify | fingerprint }}
+  <script src="{{ $mainJs.RelPermalink }}"></script>
+  {{ block "scripts" . }}{{ end }}
+</body>
+</html>
