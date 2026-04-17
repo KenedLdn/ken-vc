@@ -575,6 +575,18 @@ img {
     padding-bottom: 48px;
   }
 
+  .hero-tagline {
+    min-height: 3.6em;
+  }
+
+  .hero-blurb {
+    min-height: 10.5em;
+  }
+
+  .hero-descriptors {
+    min-height: 64px;
+  }
+
   .hero-descriptors .tag {
     font-size: 0.75rem;
     padding: 5px 12px;
