@@ -6,19 +6,19 @@ tags: ["ai", "strategy", "productivity"]
 summary: "AI tools are like domestic helpers — they take tasks off your plate. But are you renting by the token, or building assets that work for you for free?"
 ---
 
-There's a particular kind of exhaustion that comes with parenting a young toddler. It's not just the sleepless nights or the constant demands for attention. It's the endless stream of small, necessary tasks that add up to a mountain of work: wiping down the high chair after every meal, folding mountains of tiny clothes, preparing snacks that will be rejected in favor of something else five minutes later, and the eternal battle against the ever-growing pile of laundry that seems to reproduce overnight.
+There's a particular kind of exhaustion that comes with parenting a young toddler. It's not just the sleepless nights or the constant demands for attention. It's the endless stream of small, necessary tasks that add up to a mountain of work: wiping down the high chair after every meal, folding mountains of tiny clothes, preparing snacks that will be rejected in favour of something else five minutes later, and the eternal battle against the ever-growing pile of laundry that seems to reproduce overnight.
 
 As I watch families with live-in domestic helpers or au pairs breeze through these daily rituals, I can't help but feel a pang of envy. These helpers don't just take tasks off your plate; they transform the rhythm of family life, allowing parents to focus on what truly matters rather than being perpetually trapped in the cycle of maintenance.
 
-What many of us are discovering in the digital age is that we now have access to a new kind of domestic helper: artificial intelligence. AI tools can handle everything from scheduling appointments and managing emails to generating content, analyzing data, and even helping with creative projects. They promise to free us from the digital equivalent of wiping down high chairs and folding laundry.
+What many of us are discovering in the digital age is that we now have access to a new kind of domestic helper: artificial intelligence. AI tools can handle everything from scheduling appointments and managing emails to generating content, analysing data, and even helping with creative projects. They promise to free us from the digital equivalent of wiping down high chairs and folding laundry.
 
-But here's the catch: just like hiring domestic help, AI comes with its own recurring cost structure. Every time you ask an AI to generate content, analyze data, or perform a task, you're spending tokens—digital currency that adds up faster than you might expect. A single comprehensive project can easily run into hundreds of dollars, turning what seemed like a free helper into a significant monthly expense.
+But here's the catch: just like hiring domestic help, AI comes with its own recurring cost structure. Every time you ask an AI to generate content, analyse data, or perform a task, you're spending tokens—digital currency that adds up faster than you might expect. A single comprehensive project can easily run into hundreds of dollars, turning what seemed like a free helper into a significant monthly expense.
 
 ## The AI Cost Stack: Understanding Your Digital Helper's Price Tag
 
 Let's be honest about the economics. When you use AI tools, you're not just paying for the convenience; you're paying for the computational power, the data training, and the infrastructure that makes these sophisticated systems possible. The cost structure looks something like this:
 
-- **Per-task costs**: Each interaction costs tokens, whether it's generating a paragraph, analyzing data, or creating code
+- **Per-task costs**: Each interaction costs tokens, whether it's generating a paragraph, analysing data, or creating code
 - **Volume discounts**: The more you use, the more you spend (no bulk discounts here)
 - **Specialized models**: Advanced or domain-specific AI comes with premium pricing
 - **Integration costs**: Setting up AI to work with your existing systems often requires additional investment
@@ -40,7 +40,7 @@ Building AI assets means creating something that works for you consistently, wit
 - **Scripts that automate repetitive tasks**: A Python script that generates weekly reports or processes data
 - **Custom applications**: A simple web app that handles specific business logic
 - **Templates and frameworks**: Pre-built structures that produce consistent results
-- **Integrated solutions**: Systems that use AI where necessary but minimize token usage
+- **Integrated solutions**: Systems that use AI where necessary but minimise token usage
 
 The beauty of building assets is that they pay dividends over time. Once created, they work for you repeatedly without additional cost per use.
 
@@ -103,7 +103,7 @@ For most people, especially those new to the AI revolution, the most strategic a
 ### Step 1: Identify Your Recurring Tasks
 Make a list of tasks you do regularly that could benefit from automation. Look for patterns and repetitions in your workflow.
 
-### Step 2: Prioritize by Impact
+### Step 2: Prioritise by Impact
 Not all tasks are created equal. Focus on the ones that:
 - Take the most time
 - Are most prone to errors
@@ -120,7 +120,7 @@ You don't need to be a coding expert to build useful assets. Focus on:
 - Finding pre-built solutions you can adapt
 - Collaborating with technical people when needed
 
-### Step 5: Measure and Optimize
+### Step 5: Measure and Optimise
 Track your results. Are your assets actually saving you time and money? Be prepared to refine and improve.
 
 ## The Bottom Line: AI as Empowerment, Not Expense
